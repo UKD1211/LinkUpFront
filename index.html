@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKEDIN CLONE VERSION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+
+
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"><span>Home</span></a></li>
+                <li><a
+                        href="https://www.linkedin.com/mynetwork/?doMynetworkRefresh=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3B88HbTo5qThOhxaxRItYMLg%3D%3D"><img
+                            src="images/network.png" alt="home"><span>My Network</span></a></li>
+                <li><a
+                        href="https://www.linkedin.com/jobs/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3B88HbTo5qThOhxaxRItYMLg%3D%3D"><img
+                            src="images/jobs.png" alt="home"><span>Jobs</span></a></li>
+                <li><a
+                        href="https://www.linkedin.com/messaging/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3B88HbTo5qThOhxaxRItYMLg%3D%3D"><img
+                            src="images/message.png" alt="home"><span>Messaging</span></a></li>
+                <li><a
+                        href="https://www.linkedin.com/notifications/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3B88HbTo5qThOhxaxRItYMLg%3D%3D"><img
+                            src="images/notification.png" alt="home"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online"> <img src="images/uttam.jpg" alt="user" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+
+        </div>
+
+
+
+        <!-- --------------------------------profile-drop-down-menu---------------------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/uttam.jpg" alt="">
+                    <div>
+                        <h3>
+                            Uttam Dutta
+                        </h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!-- -----------------------------------Navbar Close-------------------------------- -->
+
+
+
+
+
+    <div class="container">
+        <!-- -------------------left-sidebar------------------------ -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/ju.jpg" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/uttam.jpg">
+                    <a href="profile.html">
+                        <h1>Uttam Dutta</h1>
+                    </a>
+                    <h3>JU EE 21'-25 | Tech Team Member at IEEE JU SB</h3>
+                    <ul>
+                        <li>Your profile views <span>233</span></li>
+                        <li>Your post views <span>379</span></li>
+                        <li>Your connections <span>97</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-profile-link">
+                    <a
+                        href="https://www.linkedin.com/my-items/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFlZuRzmTTBOrFOFKB5fwhg%3D%3D"><img
+                            src="images/items.png" alt="">My items</a>
+                    <a
+                        href="https://www.linkedin.com/premium/products/?upsellOrderOrigin=premium_homepage_identity_upsell&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3FshowPremiumWelcomeBanner%3Dtrue&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFlZuRzmTTBOrFOFKB5fwhg%3D%3D"><img
+                            src="images/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a
+                    href="https://www.linkedin.com/company/web-development/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Be%2FNTGBTHRbap9MLy7fNKFA%3D%3D"><img
+                        src="images/recent.png" alt="">Web Development</a>
+                <a
+                    href="https://www.linkedin.com/jobs/search?keywords=user%20interface%20designer&origin=BLENDED_SEARCH_RESULT_CARD_NAVIGATION&currentJobId=3298948805&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B4CulnZ%2BNR4ya7g4quOHuJg%3D%3D"><img
+                        src="images/recent.png" alt="">User Interface</a>
+                <a
+                    href="https://www.linkedin.com/jobs/view/3301800251/?eBP=JOB_SEARCH_ORGANIC&refId=p6a9hoz%2FnHq1tiGys0f7mQ%3D%3D&trackingId=c8XFhHXrFGvXCrnWMCBUbA%3D%3D&trk=flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BXPySG2QiQjS8QVunKDPSjw%3D%3D&lici=c8XFhHXrFGvXCrnWMCBUbA%3D%3D"><img
+                        src="images/recent.png" alt="">Online Learning</a>
+                <a
+                    href="https://www.linkedin.com/jobs/view/3301800251/?eBP=JOB_SEARCH_ORGANIC&refId=p6a9hoz%2FnHq1tiGys0f7mQ%3D%3D&trackingId=c8XFhHXrFGvXCrnWMCBUbA%3D%3D&trk=flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BXPySG2QiQjS8QVunKDPSjw%3D%3D&lici=c8XFhHXrFGvXCrnWMCBUbA%3D%3D"><img
+                        src="images/recent.png" alt="">Learn Online</a>
+                <a
+                    href="https://www.linkedin.com/jobs/search?keywords=motorsport&origin=BLENDED_SEARCH_RESULT_CARD_NAVIGATION&currentJobId=3296289041&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BHBdbZFMKSPmnPhZ1IERHqw%3D%3D"><img
+                        src="images/recent.png" alt="">Motosports</a>
+                <a
+                    href="https://www.linkedin.com/jobs/view/3306194400/?alternateChannel=search&refId=6rLjzkX6cNCbogTndQkqWQ%3D%3D&trackingId=dZ8XQklYUt5YQyC%2FUJmQtw%3D%3D&trk=d_flagship3_search_srp_jobs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3BXPySG2QiQjS8QVunKDPSjw%3D%3D"><img
+                        src="images/recent.png" alt="">Code Better</a>
+                <h3>GROUPS</h3>
+                <a
+                    href="https://www.linkedin.com/company/i-web-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B7A%2FcJl1eR5CgTZLBLzDPVQ%3D%3D"><img
+                        src="images/group.png" alt="">Web Design Group</a>
+                <a
+                    href="https://www.linkedin.com/company/ieee-ju/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBMye8LBCSVS7mPbuMK9PVw%3D%3D"><img
+                        src="images/group.png" alt="">IEEE JU SB</a>
+                <a
+                    href="https://www.linkedin.com/company/javascript-developer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B7A%2FcJl1eR5CgTZLBLzDPVQ%3D%3D"><img
+                        src="images/group.png" alt="">JS Learners</a>
+                <a
+                    href="https://www.linkedin.com/jobs/search?keywords=blockchain&origin=BLENDED_SEARCH_RESULT_CARD_NAVIGATION&currentJobId=3294765747&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BPsLn6J39Rh6%2BFhdY0XULSw%3D%3D"><img
+                        src="images/group.png" alt="">Block Chain & Crypto Group</a>
+                <h3>HASTAG</h3>
+                <a
+                    href="https://www.linkedin.com/company/web-development/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Be%2FNTGBTHRbap9MLy7fNKFA%3D%3D"><img
+                        src="images/hashtag.png" alt="">webdevelopment</a>
+                <a
+                    href="https://www.linkedin.com/company/ux-designer/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBYQtWFxJTZqtHxs%2FUM3Nig%3D%3D"><img
+                        src="images/hashtag.png" alt="">ui/uxdesign</a>
+                <a
+                    href="https://www.linkedin.com/jobs/search?keywords=user%20interface%20designer&origin=BLENDED_SEARCH_RESULT_CARD_NAVIGATION&currentJobId=3298948805&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B4CulnZ%2BNR4ya7g4quOHuJg%3D%3D"><img
+                        src="images/hashtag.png" alt="">userinterface</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+
+
+        <!-- ------------------------main-content------------------------>
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/uttam.jpg" alt="">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt="">Photo</li>
+                    <li><img src="images/video.png" alt="">Photo</li>
+                    <li><img src="images/event.png" alt="">Event</li>
+                    <li>Post</li>
+
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/mainak.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/mainak-seal-5b4b06223?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADg6H9gBgqfRk70rFMhNvFihgoyjvakLcvY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3B6YSnpQBYRyOAxYFJhwwRHQ%3D%3D">
+                            <h1>MAINAK SEAL </h1>
+                        </a>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Thank you <span1>Michela Chiappalone,</span1>
+                    <span1>John Okuonzi,</span1> and <span1>Mehak Azeem</span1> for accepting to be part of us as we
+                    celebrate IEEE Day. The <span1>IEEE</span1> Engineering in <span1>Medicine and Biology Society
+                    </span1> SAC M.E - Africa International Student Conference 2022 (Uganda) wouldn't have been such a
+                    success without your contribution. Kudos!
+                </p>
+                <img src="images/1stpic.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">177</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            22 comments &middot; 40 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/Dwaipayan.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/dwaipayan-haldar-1005a7219?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADcVJdABMUsRmLvVqFoSiLeIkCY5KEq-rls&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3B6YSnpQBYRyOAxYFJhwwRHQ%3D%3D">
+                            <h1>Dwaipayan Halder</h1>
+                        </a>
+                        <small>Student at JU EE 21'-25 | Statistics and
+                            Mathematics Content Creation Intern at <span1>SkillCounty</span1> </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>I’m excited to share that I’ve joined <span1>IBM</span1> as a Client Engineering Designer in NYC! 🐝
+                </p>
+                <img src="images/IBM.jpg" alt="" width="100%">
+                <!-- <img src="images/AAYQAQQSAAgAAQAAAAAAAAMDzOJ8AjwSRx6e4fdD_CFVCw.gif" alt="" width="100%"> -->
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">Parthib Roy and 102 others</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            28 comments &middot; 67 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/saptarshi.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/sapt3?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACADpEIBvwwCayCa5aC-pArriIrWbTxu8F8&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bdm48kUuYTFqVFPJIvP2JWQ%3D%3D">
+                            <h1>Saptarshi Ghosh</h1>
+                        </a>
+                        <small>Intel Hardware | UC Berkeley | IEEE Computer Society </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Let's call it what it is! A <span1>#careerbreak.</span1>
+
+                    This year, <span1>LinkedIn</span1> took a step in the right direction by adding a feature that
+                    allows users to reference a break in their career – well done!</p>
+                <!-- <img src="images/post-image-2.png" alt="" width="100%"> -->
+                <img src="images/IBM.gif" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">You and 55 others</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            18 comments &middot; 27 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/biplab.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/biplabchakraborty?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAClryQBriDhoa6M58oRH7BrLCvyNu8W_-o&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BwgX3ehgiTcqEoj0kGo3sZQ%3D%3D">
+                            <h1>Biplab Chakraborty</h1>
+                        </a>
+                        <small>Head - Investments | Rebel Foods | All views are personal </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Last week I joined <span1>LinkedIn</span1> for a special <span1>#HispanicHeritageMonth</span1>
+                    discussion on the need for Latina and Latino representation in leadership. And if I had to describe
+                    it in one word it’d be: INVIGORATING.</p>
+                <!-- <img src="images/post-image-2.png" alt="" width="100%"> -->
+                <img src="images/pic4.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">You and 97 others</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            27 comments &middot; 88 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/nicholas.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/nicholasxthompson?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAABr4nsBKu5ZtKWQTU3Ybg9POUUVN8u74MA&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUjfSrpeiSMiibdL6uXv%2BFQ%3D%3D">
+                            <h1>Nicholas Thompson</h1>
+                        </a>
+                        <small>CEO at The Atlantic </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Traveled to London with the family and ran my first international marathon. It all went exactly to
+                    plan: I finished in 2:35 and snagged 14th place overall and 1st place for Americans in the master’s
+                    world championships race-within-the-race.</p>
+                <!-- <img src="images/post-image-2.png" alt="" width="100%"> -->
+                <img src="images/thompson.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">4678</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            226 comments &middot; 14 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/mayank.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/mayank-jadavpur?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACqDnG4BH9UfpG78e7HxqxUMWQ8uXLg7elU&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUjfSrpeiSMiibdL6uXv%2BFQ%3D%3D">
+                            <h1>Mayank Jha</h1>
+                        </a>
+                        <small>Executive Trainee at GAIL GATE 2022 <span2> 20(IN) & 40(EC)</span2>
+                            <span2>GATE 2021 AIR 98(IN) & 316(EC)</span2>
+                        </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>So a chapter in my life, which started in 2020, has finally ended here and a new chapter has begun.
+                </p>
+                <!-- <img src="images/post-image-2.png" alt="" width="100%"> -->
+                <img src="images/GAIL.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">742</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            52 comments &middot; 4 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/prize.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/company/nobelprize/?miniCompanyUrn=urn%3Ali%3Afs_miniCompany%3A20323518&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BUjfSrpeiSMiibdL6uXv%2BFQ%3D%3D">
+                            <h1>The Nobel Prize</h1>
+                        </a>
+                        <small>The official LinkedIn page of the Nobel Prize</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>In principle, all biomolecules have a framework of linked carbon atoms. Life has evolved methods for
+                    creating these, but it has proven notoriously difficult for chemists.
+                </p>
+                <img src="images/nobleprize.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">12,677</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            135 comments &middot; 763 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/Tim.jpg" alt="">
+                    <div>
+                        <a
+                            href="https://www.linkedin.com/in/timwingerter?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC0FSCkBBrU0luyk3UvHMlPhtHQDKRQB3TI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BkfwgdZ7TQ2OQYuc12ddh4g%3D%3D">
+                            <h1>Tim Wingerter</h1>
+                        </a>
+                        <small>Enterprise Strategy Consultant | Master@IBM </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Advertising agencies are always trying to push boundaries. Agencies have to be careful, though, that
+                    in their quest to be creative and innovative they don’t go too far and produce advertisements that
+                    are in poor taste.
+                    <span1>#linkedin</span1>
+                </p>
+                <img src="images/job.jpg" alt="" width="100%">
+                <!-- <img src="images/AAYQAQQSAAgAAQAAAAAAAAMDzOJ8AjwSRx6e4fdD_CFVCw.gif" alt="" width="100%"> -->
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-user">Ayan Bose and 49 others</span>
+                    </div>
+
+                    <div>
+                        <span>
+                            37 comments &middot; 15 shares
+                        </span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/uttam.jpg" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- -------------------right-sidebar------------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" alt="" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#"> High demand for skilled manpower</a>
+                <span>2d ago &middot; 12,233 readers</span>
+
+                <a href="#">Career growing horizontally too</a>
+                <span>1d ago &middot; 10,255 readers</span>
+
+                <a href="#"> More hiring = higher confidence</a>
+                <span>18h ago &middot; 8,900 readers</span>
+
+                <a href="#"> Gautam Adani is the world's 3rd Richest </a>
+                <span>12h ago &middot; 3,800 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of Web Design</p>
+                <div>
+                    <img src="images/uttam.jpg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <!-- <a href="#" class="ad-link">Learn More</a> -->
+
+                <a href="#" class="ad-links">Learn More</a>
+
+                <!-- <button class="ad-link">Learn More</button> -->
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="https://about.linkedin.com/">About</a>
+                <a
+                    href="https://www.linkedin.com/accessibility?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLNB3xFipSI%2BIIXug5UJnKw%3D%3D">Accessiblity</a>
+                <a
+                    href="https://www.linkedin.com//help/linkedin?trk=footer_d_flagship3_feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLNB3xFipSI%2BIIXug5UJnKw%3D%3D">Help
+                    Center</a>
+                <a
+                    href="https://www.linkedin.com/static?key=privacy_policy&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLNB3xFipSI%2BIIXug5UJnKw%3D%3D">Privacy
+                    Policy</a>
+                <a
+                    href="https://www.linkedin.com/ad/start?trk=n_nav_ads_rr&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BLNB3xFipSI%2BIIXug5UJnKw%3D%3D">Advertising</a>
+                <a href="https://mobile.linkedin.com/">Get the App</a>
+                <a href="https://business.linkedin.com/marketing-solutions?trk=n_nav_lms_f&src=li-footer">More</a>
+
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png" alt="">
+                    <p>Linkedup &#169; 2022. All right reserved</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+
+
+    </script>
+
+
+
+    <script src="node.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKEDIN CLONE VERSION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+
+
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="home"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="home"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="home"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="home"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online"> <img src="images/uttam3.jpg" alt="user" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+
+        </div>
+        <!-- --------------------------------profile-drop-down-menu----------------------------     -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/uttam.jpg" alt="">
+                    <div>
+                        <h3>
+                            Uttam Dutta
+                        </h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!-- -----------------------------------Navbar Close-------------------------------- -->
+
+
+
+
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/ju.jpg" alt="" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/uttam.jpg" alt="" class="profile-pic">
+                    <h1>Uttam Dutta</h1>
+                    <b>JADAVPUR UNIVERSITY ELECTRICAL ENGINEERING '21-25 | WEB DEVELPOER | Tech team member at IEEE JU
+                        SB | INTERNSHIP in MACHINE LEARNING(ML) at coincent.ai</b>
+                    <p>Kolkata,West Bengal,India &middot; <a
+                            href="https://www.linkedin.com/in/uttam-kanti-dutta-877357236/overlay/contact-info/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BRuL4%2FmYzTOq%2BOD%2FPkwL%2Fvg%3D%3D">Contact
+                            info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/soham.jpg" alt="">
+                        <span>1 mutual connection: <a
+                                href="https://www.linkedin.com/in/soham-chaudhuri-8aa0a9226?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADicS8IBM9Yfq_44zHd4OKZJCRfStcesUzw&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BAW0r5EDLQxSnl1j1vVLRoQ%3D%3D">
+                                <span3>Soham Chaudhuri</span3>
+                            </a></span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png" alt="">Connect</a>
+                        <a href="#"><img src="images/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>==My self Uttam Kanti Dutta
+                    <br>
+                    ==JADAVPUR UNIVERSITY ELECTRICAL ENGINEERING '21-25
+                    <br>
+                    ==coder,knows C++,c#,JS,CSS5,HTML3,node.JS
+                    <br>
+                    ==Web developer
+                    <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2021 - Present &middot; 1.5 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minus natus neque nemo, sequi
+                            repellat quibusdam non? Architecto, sunt laboriosam tenetur consequatur tempora animi.</p>
+                        <hr>
+
+                    </div>
+                </div>
+
+
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Block Chain Developer</h3>
+                        <b>Google Inc &middot; Full-time</b>
+                        <b>Feb 2022 - Present &middot; 1 year</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minus natus neque nemo, sequi
+                            repellat quibusdam non? Architecto, sunt laboriosam tenetur consequatur tempora animi.</p>
+                        <hr>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b>Slack &middot; Full-time</b>
+                        <b>June 2018 - Jan 2021 &middot; 2.6 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minus natus neque nemo, sequi
+                            repellat quibusdam non? Architecto, sunt laboriosam tenetur consequatur tempora animi.</p>
+
+
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all 7 experiences <img src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="images/jadavpur.jpg" alt="">
+                    <div>
+
+                        <h3>Jadavpur University</h3>
+                        <b>BEE, Electrical Engineering</b>
+                        <b>2018 - 2022</b>
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="profile-desc-row">
+                    <img src="images/north.png" alt="">
+                    <div>
+
+                        <h3>Northwestern University</h3>
+                        <b>Computer Science</b>
+                        <b>2015 - 2018</b>
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="profile-desc-row">
+                    <img src="images/harvard.jpg" alt="">
+                    <div>
+
+                        <h3>Harvard University</h3>
+                        <b>BSEE, Electrical Engineering</b>
+                        <b>2010 - 2014</b>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Webdesign</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">Javascript</a>
+                <a href="#" class="skills-btn">Python</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Bengali</a>
+                <a href="#" class="language-btn">Hindi</a>
+            </div>
+
+        </div>
+
+
+
+        <!-- ----------------profile-sidebar----------------------------- -->
+
+
+
+        <div class="profile-sidebar">
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of Web Design</p>
+                <div>
+                    <img src="images/uttam.jpg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <!-- <a href="#" class="ad-link">Learn More</a> -->
+
+                <a href="#" class="ad-links">Learn More</a>
+
+                <!-- <button class="ad-link">Learn More</button> -->
+            </div>
+
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/sabarno.jpg" alt="">
+                    <div>
+                        <h2>Sabarno Biswas</h2>
+                        <p>Student at Jadavpur University , Kolkata</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/panida.jpg" alt="">
+                    <div>
+                        <h2>Saptarshi Pani </h2>
+                        <p>AI-ML-DL | Building BHARATnCrypt | National Entrepreneurship-Summit WINNER : IIM A, NIT
+                            SILCHAR</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/anubhab.jpg" alt="">
+                    <div>
+                        <h2>Anubhab Chakraborty </h2>
+                        <p>Electrical Engineering Undergrad, Jadavpur University</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/ritwick.jpg" alt="">
+                    <div>
+                        <h2>Ritwick Halder</h2>
+                        <p>Student at Jadavpur University, Kolkata</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/subham.jpg" alt="">
+                    <div>
+                        <h2>Subham Sinha</h2>
+                        <p>JU IEE'25 || Web Developer || Open Source Contributer || AI/ML enthusiast || Competitive
+                            Programmer || Enthusiastic learner</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+
+            <div class="copyright-msg">
+                <img src="images/logo.png" alt="">
+                <p>Linkedup &#169; 2022. All right reserved</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
