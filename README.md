@@ -36,6 +36,7 @@ made using Html5, CSS3, JS, SASS, bootstrap etc.
 ## Snapshots
 
 <img src="images/Screenshot (572).png" width="300">
+<img src="images/Screenshot (580).png" width="300">
 <img src="images/Screenshot (573).png" width="300">
 <img src="images/Screenshot (574).png" width="300">
 <img src="images/Screenshot (575).png" width="300">
